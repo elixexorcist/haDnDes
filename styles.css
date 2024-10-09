@@ -73,28 +73,76 @@ input:focus {
     background-color: #e6b800;
 }
 
-#dungeonDisplay {
+/* Central display styling */
+.central-display {
     margin-top: 20px;
-    display: grid;
-    gap: 4px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.dungeon-grid {
-    display: inline-grid;
-    grid-template-columns: repeat(auto-fill, 20px);
+.central-display.hidden {
+    display: none;
 }
 
-.dungeon-cell {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #444;
-    background-color: #222;
+.central-display h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
 }
 
-.dungeon-cell.wall {
-    background-color: #555;
+.central-display ul {
+    list-style: none;
+    padding: 0;
 }
 
-.dungeon-cell.empty {
-    background-color: #1c1c1c;
+.central-display li {
+    margin: 10px 0;
 }
+
+.central-display button {
+    padding: 8px 16px;
+    background-color: #ffcc00;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.central-display button:hover {
+    background-color: #e6b800;
+}
+
+/* Command Block Styling */
+.command-block {
+    white-space: pre-wrap; /* Ensures the text in the command block wraps properly */
+    word-wrap: break-word;
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for better readability of code */
+}
+
+/* Copy Button Styling */
+.copy-btn {
+    padding: 8px 16px;
+    background-color: #007bff; /* Contrasting blue color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+

@@ -1,15 +1,26 @@
 {
-    "powerups": [
-      "Fireball Boost",
-      "Healing Potion",
-      "Strength Amulet",
-      "Speed Boots",
-      "Mage's Staff",
-      "Shield of Valor",
-      "Ring of Invisibility",
-      "Thunder Sword",
-      "Wisdom Tome",
-      "Dragon Scale Armor"
-    ]
-  }
-  
+    "BaseSigils": {
+        "🔥 Inferno's Wrath": {
+            "Name": "🔥 Inferno's Wrath",
+            "Description": "Gains advantage on attack rolls but suffers 1d4 fire damage at the start of each turn.",
+            "Command": "!init effect <claimer> \"🔥 Inferno's Wrath\" -adv -desc \"Gains advantage on attack rolls but suffers 1d4 fire damage at the start of each turn.\""
+            },
+        "❄️ Glacial Shield": {
+            "Name": "❄️ Glacial Shield",
+            "Description": "Increases AC by 3 but movement speed is reduced by 10 feet.",
+            "Command": "!init effect <claimer> \"❄️ Glacial Shield\" -ac +3 -desc \"Increases AC by 3 but movement speed is reduced by 10 feet.\""
+            }
+        },
+    "BossSigils": {
+        "🔥 Inferno's Fury": {
+            "Name": "🔥 Inferno's Fury",
+            "Description": "Gains advantage on all attack rolls and deals an additional 1d8 fire damage, but suffers 1d6 fire damage at the start of each turn and has disadvantage on Dexterity saving throws.",
+            "Command": "!init effect <claimer> \"🔥 Inferno's Fury\" -adv -d 1d8[fire] -sdis dexterity -desc \"Gains advantage on all attack rolls and deals an additional 1d8 fire damage, but suffers 1d6 fire damage at the start of each turn and has disadvantage on Dexterity saving throws.\""
+            },
+        "❄️ Glacial Fortress": {
+            "Name": "❄️ Glacial Fortress",
+            "Description": "Increases AC by 4 and gains resistance to fire damage, but movement speed is reduced by 15 feet and suffers disadvantage on Dexterity checks.",
+            "Command": "!init effect <claimer> \"❄️ Glacial Fortress\" -ac +4 -resist fire -sdis dexterity -desc \"Increases AC by 4 and gains resistance to fire damage, but movement speed is reduced by 15 feet and suffers disadvantage on Dexterity checks.\""
+        }
+    }
+}
